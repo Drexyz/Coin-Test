@@ -8,6 +8,7 @@ const coinNeeded = () => {
   var coins = []; //coin we need to do transaction
   var price = 0;
   while (i < transaction + price) {
+    price += 0.5
     //get array of coin that more than transaction
     var coinAvailable = [];
     for (x of pocket) {
@@ -27,8 +28,6 @@ const coinNeeded = () => {
       i += pocket.slice(-1)[0]
       pocket.splice(-1)
     }
-
-    price += 0.5
   } 
 
   //get change
