@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test</title>
+</head>
+<body style="display: flex;">
+  <form>
+    <label for="pocket">Coin:</label><br>
+    <input type="text" id="pocket" name="pocket"><br>
+    <label for="transaction">Transaction:</label><br>
+    <input type="number" id="transaction" name="transaction"><br><br>
+    <button type="button" onclick="coinNeeded()">Input</button>
+  </form>
+  <div style="margin-left: 30vw;">
+    <p>Output :</p><br>
+    <P>Coin yang diperlukan:</P>
+    <P id="coins">0</P>
+    <P>Biaya:</P>
+    <P id="price">0</P>
+    <p>Kembalian:</p>
+    <p id="change">0</p>
+  </div>
+
+  <script src="./test.js"></script>
+</body>
+</html>
